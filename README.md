@@ -1,4 +1,4 @@
-# ET-Board MicroPython Level2
+# ET-Board MicroPython Level2 Contents
 
 * 이티보드 마이크로파이션 파헤치기 Levle2(중급) 콘텐츠입니다.
 </br></br>
