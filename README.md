@@ -16,7 +16,7 @@
 
 ### 이티보드 채널 안내
 
-* [이티보드 스토어팜 https://smartstore.naver.com/ketri](https://smartstore.naver.com/ketri)
+* [이티보드 스토어팜 (https://smartstore.naver.com/ketri)](https://smartstore.naver.com/ketri)
 * [이티보드 홈페이지](http://et.ketri.re.kr)
 * [이티보드 블로그](https://blog.naver.com/etboard)
 * [이티보드 유튜브](https://www.youtube.com/channel/UCFZdZIaziZ7rKKfLSfUv3Qg)
