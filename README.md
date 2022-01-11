@@ -26,5 +26,5 @@
 * [KETRi 홈페이지 (http://www.ketri.re.kr)](http://www.ketri.re.kr)
 * [KETRi 페이스북 (https://www.facebook.com/ketri2484/)](https://www.facebook.com/ketri2484/)
 * [KETRi 인스타그램 (https://www.instagram.com/ketri_no1/)](https://www.instagram.com/ketri_no1/)
-* KETRi 전화번호: tel:061-721-2484
+* KETRi 전화번호: 061-721-2484
 
