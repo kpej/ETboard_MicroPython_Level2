@@ -1,6 +1,6 @@
 # ET-Board MicroPython Level2
 
-* 이티보드 마이크로파이션 파헤치기 Levle2(중급) 콘텐츠입니다.  
+* 이티보드 마이크로파이션 파헤치기 Levle2(중급) 콘텐츠입니다.
 </br></br>
 
   
@@ -12,7 +12,7 @@
 * [토니 프로그램(Tonny 3.3.11)(exe)](https://github.com/thonny/thonny/releases/download/v3.3.11/thonny-3.3.11.exe) 또는 ht<span>tp://</span>oapass.com/pub/ketri/2021/micropython/thonny-3.3.11.exe
 * [토니 플러그인(이티보드 전용)(whl)](https://pypi.org/project/thonny-etboard-all/) 또는 ht<span>tp://</span>oapass.com/pub/ketri/2021/micropython/thonny_plugin.zip
 * [이티보드(ET-Board) 핀아웃(pdf))](http://oapass.com/pub/ketri/2021/et/ET-Board_Pinout_v1.0.pdf)
-* 이티보드(ET-Board) 마이크로파이션 파헤치기 Level2(중급) 학습자료(zip)... 준비중입니다.     
+* 이티보드(ET-Board) 마이크로파이션 파헤치기 Level2(중급) 학습자료(zip)... 준비중입니다.
 </br></br>
 
 
