@@ -8,7 +8,7 @@
 아래 자료는 [이티보드(ET-Board) 자료실](http://et.ketri.re.kr/board/)에서도 얻을 수 있습니다.
 
 * [이티보드(ET-Board) 마이크로파이션 설정 매뉴얼(pdf)](http://oapass.com/pub/ketri/2021/micropython/micropython_setting_manual.pdf)
-* [토니 프로그램(Tonny 3.3.11)(exe)](https://github.com/thonny/thonny/releases/download/v3.3.11/thonny-3.3.11.exe) 또 ht<span>tp://</span>oapass.com/pub/ketri/2021/micropython/thonny-3.3.11.exe
+* [토니 프로그램(Tonny 3.3.11)(exe)](https://github.com/thonny/thonny/releases/download/v3.3.11/thonny-3.3.11.exe) 또는 ht<span>tp://</span>oapass.com/pub/ketri/2021/micropython/thonny-3.3.11.exe
 * [토니 플러그인(이티보드 전용) 핀아웃(zip)](http://oapass.com/pub/ketri/2021/micropython/thonny_plugin.zip)
 * 이티보드(ET-Board) 마이크로파이션 파헤치기 Level2(중급) 학습자료(zip)... 준비중입니다.
 
