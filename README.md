@@ -1,4 +1,4 @@
-# 이티보드 마이크로파이션 파헤치기 Level(중급) 콘텐츠
+# 이티보드 마이크로파이션 파헤치기 Level 2 (중급) 콘텐츠
 
 * ET-Board MicroPython Level2 Contents
 </br></br>
