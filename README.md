@@ -1,9 +1,8 @@
 # ET-Board MicroPython Level2
 
-* 이티보드 마이크로파이션 파헤치기 Levle2(중급) 콘텐츠입니다.
-
-
-
+* 이티보드 마이크로파이션 파헤치기 Levle2(중급) 콘텐츠입니다.  
+  
+  
 ### 문서 및 자료(Documentation & File)
 
 아래 자료는 [이티보드(ET-Board) 자료실](http://et.ketri.re.kr/board/)에서도 얻을 수 있습니다.
