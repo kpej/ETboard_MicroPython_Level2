@@ -70,7 +70,7 @@ def loop():
     button_green_value = button_green.value()
     button_yellow_value = button_yellow.value()
 
-    # 빨강 버튼 으로 빨간 LED 제어
+    # 빨강 버튼 으로 빨강 LED 제어
     if button_red_value == 0 and button_red_old_value == 1:
         led_red_status = 1 - led_red_status
     button_red_old_value = button_red_value
@@ -79,7 +79,7 @@ def loop():
     else:
         led_red.value(LOW)
 
-    # 파랑 버튼 으로 빨간 LED 제어
+    # 파랑 버튼 으로 파랑 LED 제어
     if button_blue_value == 0 and button_blue_old_value == 1:
         led_blue_status = 1 - led_blue_status
     button_blue_old_value = button_blue_value
@@ -88,7 +88,7 @@ def loop():
     else:
         led_blue.value(LOW)
 
-    # 초록 버튼 으로 빨간 LED 제어
+    # 초록 버튼 으로 초록 LED 제어
     if button_green_value == 0 and button_green_old_value == 1:
         led_green_status = 1 - led_green_status
     button_green_old_value = button_green_value
@@ -97,7 +97,7 @@ def loop():
     else:
         led_green.value(LOW)
 
-    # 노랑 버튼 으로 빨간 LED 제어
+    # 노랑 버튼 으로 노랑 LED 제어
     if button_yellow_value == 0 and button_yellow_old_value == 1:
         led_yellow_status = 1 - led_yellow_status
     button_yellow_old_value = button_yellow_value
