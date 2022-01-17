@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31dcac9b-17fe-4d81-aab3-8307dee51d19" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/02_button/04._button_led_control/04._led_button_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/02_button/04._button_led_control/04._led_button_control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/01_led/01._led_one_blink/01._led_one_blink.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/01_led/01._led_one_blink/01._led_one_blink.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/03_variable_resistance/02._variable_resistance_sensor_led/02._variable_resistance_sensor_led.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/03_variable_resistance/02._variable_resistance_sensor_led/02._variable_resistance_sensor_led.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

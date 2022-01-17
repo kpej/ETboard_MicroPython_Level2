@@ -16,9 +16,9 @@ from ETboard.lib.pin_define import *
 # global variable
 sensor = ADC(Pin(A0))                    # 가변저항 핀 지정
 
-PinD2 = Pin(D2)                          # 빨강 LED 핀 지정
-PinD3 = Pin(D3)                          # 파랑 LED 핀 지정
-PinD4 = Pin(D4)                          # 초록 LED 핀 지정
+led_red = Pin(D2)                          # 빨강 LED 핀 지정
+led_blue = Pin(D3)                          # 파랑 LED 핀 지정
+led_green = Pin(D4)                          # 초록 LED 핀 지정
 PinD5 = Pin(D5)                          # 노랑 LED 핀 지정
 
 
