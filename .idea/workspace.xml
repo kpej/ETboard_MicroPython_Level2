@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="31dcac9b-17fe-4d81-aab3-8307dee51d19" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_photoresistor/03._photoresistor_sensor_led_fade/03._photoresistor_sensor_led_fade.py" beforeDir="false" afterPath="$PROJECT_DIR$/04_photoresistor/03._photoresistor_sensor_led_fade/03._photoresistor_sensor_led_fade.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/02_button/04._button_led_control/04._led_button_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/02_button/04._button_led_control/04._led_button_control.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
