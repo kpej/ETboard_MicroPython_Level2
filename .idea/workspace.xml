@@ -9,6 +9,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/01_led/01._led_one_blink/01._led_one_blink.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/01_led/01._led_one_blink/01._led_one_blink.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/03_variable_resistance/02._variable_resistance_sensor_led/02._variable_resistance_sensor_led.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/03_variable_resistance/02._variable_resistance_sensor_led/02._variable_resistance_sensor_led.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/04_photoresistor/02._photoresistor_sensor_led/02._photoresistor_sensoer_led.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/04_photoresistor/02._photoresistor_sensor_led/02._photoresistor_sensoer_led.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/05_temperature/02._temperature_sensor_result/02._temperature_sensor_result.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/05_temperature/02._temperature_sensor_result/02._temperature_sensor_result.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/05_temperature/03._temperature_sensor_temp_led/03._temperature_sensor_temp_led.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/05_temperature/03._temperature_sensor_temp_led/03._temperature_sensor_temp_led.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/10_WiFi/01._WiFi_IPAddress_print/01._WiFi_IPAddress_print.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/10_WiFi/01._WiFi_IPAddress_print/01._WiFi_IPAddress_print.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/21_servo_motor/04._servo_motor_control/04._servo_motor_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/21_servo_motor/04._servo_motor_control/04._servo_motor_control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/22_ultrasonic/02._ultrasonic_sensor_led_control/02._ultrasonic_sensor_led.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/22_ultrasonic/02._ultrasonic_sensor_led_control/02._ultrasonic_sensor_led.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../IOT화 (mqtt)/etboard_mqtt_simple(20220111)/etboard_mqtt_simple/etboard_mqtt_simple.ino" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

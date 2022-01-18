@@ -1,6 +1,6 @@
 # ******************************************************************************************
 # FileName     : 02._temperature_sensor_result
-# Description  : 온도 센서값을 받고 값을 온도로 변환해서 쉘에 출력
+# Description  : 온도 센서 값을 이용해 온도 출력 해보기
 # Author       : 이승찬
 # Created Date : 2021.08.17
 # Reference    :

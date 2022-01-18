@@ -56,14 +56,14 @@ def loop():
         PinD5.value(LOW) 
         print("파랑온")
 
-    if Tc < 20:                                          # 온도가 10도 이상 20도 미만이면 초록 LED 켜기
+    if Tc >= 10 && Tc < 20:                                          # 온도가 10도 이상 20도 미만이면 초록 LED 켜기
         PinD2.value(LOW)
         PinD3.value(LOW)
         PinD4.value(HIGH) 
         PinD5.value(LOW) 
         print("초록온")
 
-    if Tc < 30:                                          # 온도가 20도이상 30도 미만이면 노랑 LED 켜기
+    if Tc >= 20 && Tc < 30:                                          # 온도가 20도이상 30도 미만이면 노랑 LED 켜기
         PinD2.value(LOW)
         PinD3.value(LOW)
         PinD4.value(LOW) 

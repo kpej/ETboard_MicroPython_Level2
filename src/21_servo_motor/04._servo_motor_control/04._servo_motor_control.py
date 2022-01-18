@@ -42,7 +42,7 @@ def loop():
         servo.write_angle(pos)
         time.sleep(0.01)
     
-    if Down_state == 0:                        # 노랑버튼이 눌려질때 서보모터 위로 작동
+    if Down_state == 0:                        # 노랑버튼이 눌려질때 서보모터 아래로 작동
         pos -= 1
         if pos < 0:
             pos = 0

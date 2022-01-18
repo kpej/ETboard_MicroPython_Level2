@@ -41,16 +41,16 @@ def loop():
     PinD4.value(LOW)
     PinD5.value(LOW)
     
-    if sensor_result < 2000:          # 조도센서 값이 2000이하이면 빨강 LED 불 킴
+    if sensor_result < 2000:          # 조도센서 값이 2000이하이면 빨강 LED 킴
         PinD2.value(HIGH)
         
-    if sensor_result < 1500:          # 조도센서 값이 1500이하이면 파랑 LED 불 킴
+    if sensor_result < 1500:          # 조도센서 값이 1500이하이면 파랑 LED 킴
         PinD3.value(HIGH)
         
-    if sensor_result < 1000:          # 조도센서 값이 1000이하이면 초록 LED 불 킴
+    if sensor_result < 1000:          # 조도센서 값이 1000이하이면 초록 LED 킴
         PinD4.value(HIGH)
         
-    if sensor_result < 500:           # 조도센서 값이 500이하이면 노랑 LED 불 킴
+    if sensor_result < 500:           # 조도센서 값이 500이하이면 노랑 LED 킴
         PinD5.value(HIGH)
 
 

@@ -57,12 +57,12 @@ def loop():
     else:
         PinD2.value(LOW)                            # 빨강색 LED 꺼짐
 
-    if (distance < 20) and (distance > 10):         # 10cm 초과 그리고 20cm 미만
+    if (distance < 20) and (distance >= 10):         # 10cm 초과 그리고 20cm 이하
         PinD5.value(HIGH)                           # 노랑색 LED 켜짐
     else:
         PinD5.value(LOW)                            # 노랑색 LED 꺼짐
         
-    if distance > 20:                               # 20cm 이상이면
+    if distance > 20:                               # 20cm 초과이면
         PinD4.value(HIGH)                           # 초록색 LED 켜짐
     else:
         PinD4.value(LOW)                            # 초록색 LED 꺼짐
