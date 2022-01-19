@@ -33,10 +33,10 @@ led_yellow = Pin(D5)                                     # 노랑 LED 핀 지정
 def setup():
     sensor.atten(ADC.ATTN_11DB)                          # 온도센서 입력모드 설정
 
-    led_red.init(Pin.OUT)                                # D2를 빨간 LED 출력모드 설정
-    led_blue.init(Pin.OUT)                               # D3를 파란 LED 출력모드 설정
-    led_green.inti(Pin.OUT)                              # D4를 초록 LED 출력모드 설정
-    led_yellow.init(Pin.OUT)                             # D5를 노랑 LED 출력모드 설정
+    led_red.init(Pin.OUT)                                # 빨간 LED 출력모드 설정
+    led_blue.init(Pin.OUT)                               # 파란 LED 출력모드 설정
+    led_green.inti(Pin.OUT)                              # 초록 LED 출력모드 설정
+    led_yellow.init(Pin.OUT)                             # 노랑 LED 출력모드 설정
 
 
 # main loop

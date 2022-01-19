@@ -33,11 +33,11 @@ def loop():
     Up_state = Up.value()                      # 빨강 버튼값 가져오기
     Down_state = Down.value()                  # 노랑 버튼값 가져오기
     
-    if Up_state == 0:                          # 뻘강 버튼이 눌리면 서보 모터 위로 작동
+    if Up_state == 0:                          # 뻘강 버튼이 눌리면 서보모터 위로 작동
         servo.write_angle(180)
         time.sleep(0.3)
                 
-    if Down_state == 0:                        # 노랑 버튼이 눌리면 서보 모터 아래로 작동
+    if Down_state == 0:                        # 노랑 버튼이 눌리면 서보모터 아래로 작동
         servo.write_angle(0)
         time.sleep(0.3)
 

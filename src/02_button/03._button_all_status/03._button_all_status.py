@@ -36,7 +36,7 @@ def loop():
     button_green_status = button_green.value()     # 초록 버튼 입력모드 설정하기
     button_yellow_status = button_yellow.value()   # 노랑 버튼 입력모드 설정하기
     
-    if button_red_status == 0:                     # 빨간 버튼이 눌렸는지 체크 버튼이 눌리면 0 눌리지 않으면 1
+    if button_red_status == 0:                     # 빨강 버튼이 눌렸는지 체크 버튼이 눌리면 0 눌리지 않으면 1
         print("빨강버튼이 눌림")
         
     if button_blue_status == 0:                    # 파랑 버튼이 눌렸는지 체크 버튼이 눌리면 0 눌리지 않으면 1

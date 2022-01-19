@@ -1,6 +1,6 @@
 # ******************************************************************************************
 # FileName     : 02._temperature_sensor_result
-# Description  : 온도 센서 값을 이용해 온도 출력 해보기
+# Description  : 온도센서 값을 이용해 온도 출력 해보기
 # Author       : 이승찬
 # Created Date : 2021.08.17
 # Reference    :
@@ -31,7 +31,7 @@ def setup():
 
 # main loop
 def loop():
-    Vo = sensor.read()                         # 온도 센서 값 저장
+    Vo = sensor.read()                         # 온도센서 값 저장
 
     # 온도 센서 값을 이용하여 실제 온도 값 으로 변환
     R2 = R1 * (4095.0 / Vo - 1.0)

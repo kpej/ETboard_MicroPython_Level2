@@ -2,10 +2,10 @@
 # FileName     : 04._led_button_control
 # Description  : 버튼이 눌리면 버튼과 같은색의 LED가 켜지고
 #                다시 버튼이 눌리면 같은 색의 LED가 꺼지는 예제
-# *uthor       : 이승찬
-# *reated Date : 2021.08.20
-# *eference    :
-# *odified     :
+# Author       : 이승찬
+# Created Date : 2021.08.20
+# Reference    :
+# Modified     :
 # ******************************************************************************************
 
 
