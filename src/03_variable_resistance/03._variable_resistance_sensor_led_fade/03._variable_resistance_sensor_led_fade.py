@@ -17,13 +17,13 @@ from ETboard.lib.pin_define import *
 
 # global variable
 sensor = ADC(Pin(A0))                     # 가변저항 핀 지정
-PinD2 = Pin(D2)                           # 빨강 LED 핀 지정
+led_red = Pin(D2)                           # 빨강 LED 핀 지정
 
 
 # setup
 def setup():
     sensor.atten(ADC.ATTN_11DB)           # 가변저항 입력 모드 설정
-    PinD2.init(Pin.OUT)                   # 빨강 LED 출력 모드 설정
+    led_red.init(Pin.OUT)                   # 빨강 LED 출력 모드 설정
 
 
 # main loop
@@ -32,8 +32,7 @@ def loop():
     print(sensor_result)
 
     # 가변저항값을 이용하여 빨강 LED의 밝기를 조절
-    pwm2 = PWM(Pin(D2), 500, int(sensor_result))
-
+    pwm2 = PWM(led_red, 500, int(sensor_result))
     time.sleep(0.1)                       # 0.1초 기다리기
 
 

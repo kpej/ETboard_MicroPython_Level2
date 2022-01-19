@@ -15,20 +15,20 @@ from ETboard.lib.pin_define import *
 
 
 # global variable
-PinD2 = Pin(D2)                    # 부저 핀 지정
+buzzer = Pin(D2)                    # 부저 핀 지정
 
 
 # setup
 def setup():
-    PinD2.init(Pin.OUT)            # 부저 출력모드 설정하기
+    buzzer.init(Pin.OUT)            # 부저 출력모드 설정하기
 
 
 # main loop
 def loop():
     # 부저 소리내기
-    PinD2.value(HIGH)
+    buzzer.value(HIGH)
     time.sleep(0.001)        
-    PinD2.value(LOW)      
+    buzzer.value(LOW)
     time.sleep(0.001)         
 
 

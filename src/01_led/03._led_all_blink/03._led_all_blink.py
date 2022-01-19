@@ -15,33 +15,33 @@ from ETboard.lib.pin_define import *
 
 
 # global variable
-PinD2 = Pin(D2)            # 빨강 LED 핀 지정
-PinD3 = Pin(D3)            # 파랑 LED 핀 지정
-PinD4 = Pin(D4)            # 초록 LED 핀 지정
-PinD5 = Pin(D5)            # 노랑 LED 핀 지정
+led_red = Pin(D2)            # 빨강 LED 핀 지정
+led_blue = Pin(D3)           # 파랑 LED 핀 지정
+led_green = Pin(D4)          # 초록 LED 핀 지정
+led_yellow = Pin(D5)         # 노랑 LED 핀 지정
 
 
 # setup
 def setup():
-    PinD2.init(Pin.OUT)    # 빨강 LED 출력모드 설정
-    PinD3.init(Pin.OUT)    # 파랑 LED 출력모드 설정
-    PinD4.init(Pin.OUT)    # 초록 LED 출력모드 설정
-    PinD5.init(Pin.OUT)    # 노랑 LED 출력모드 설정
+    led_red.init(Pin.OUT)    # 빨강 LED 출력모드 설정
+    led_blue.init(Pin.OUT)   # 파랑 LED 출력모드 설정
+    led_green.init(Pin.OUT)  # 초록 LED 출력모드 설정
+    led_yellow.init(Pin.OUT) # 노랑 LED 출력모드 설정
 
 
 # main loop
 def loop():
-    PinD2.value(HIGH)      # 빨강 LED 켜기
-    PinD3.value(HIGH)      # 파랑 LED 켜기
-    PinD4.value(HIGH)      # 초록 LED 켜기
-    PinD5.value(HIGH)      # 노랑 LED 켜기
-    time.sleep(2)          # 2초 기다리기
+    led_red.value(HIGH)      # 빨강 LED 켜기
+    led_blue.value(HIGH)     # 파랑 LED 켜기
+    led_green.value(HIGH)    # 초록 LED 켜기
+    led_yellow.value(HIGH)   # 노랑 LED 켜기
+    time.sleep(2)            # 2초 기다리기
     
-    PinD2.value(LOW)       # 빨강 LED 끄기
-    PinD3.value(LOW)       # 파랑 LED 끄기
-    PinD4.value(LOW)       # 초록 LED 끄기
-    PinD5.value(LOW)       # 노랑 LED 끄기
-    time.sleep(2)          # 2초 기다리기
+    led_red.value(LOW)       # 빨강 LED 끄기
+    led_blue.value(LOW)      # 파랑 LED 끄기
+    led_green.value(LOW)     # 초록 LED 끄기
+    led_yellow.value(LOW)    # 노랑 LED 끄기
+    time.sleep(2)            # 2초 기다리기
 
 
 if __name__ == "__main__":

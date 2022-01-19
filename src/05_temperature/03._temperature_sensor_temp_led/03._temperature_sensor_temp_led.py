@@ -23,20 +23,20 @@ c3 = 2.019202697e-07
 
 sensor = ADC(Pin(A2))                                    # 온도센서 핀 지정
 
-PinD2 = Pin(D2)                                          # 빨강 LED 핀 지정
-PinD3 = Pin(D3)                                          # 파랑 LED 핀 지정
-PinD4 = Pin(D4)                                          # 초록 LED 핀 지정
-PinD5 = Pin(D5)                                          # 노랑 LED 핀 지정
+led_red = Pin(D2)                                        # 빨강 LED 핀 지정
+led_blue = Pin(D3)                                       # 파랑 LED 핀 지정
+led_green = Pin(D4)                                      # 초록 LED 핀 지정
+led_yellow = Pin(D5)                                     # 노랑 LED 핀 지정
 
 
 # setup
 def setup():
     sensor.atten(ADC.ATTN_11DB)                          # 온도센서 입력모드 설정
 
-    PinD2.init(Pin.OUT)                                  # D2를 빨간 LED 출력모드 설정
-    PinD3.init(Pin.OUT)                                  # D3를 파란 LED 출력모드 설정
-    PinD4.inti(Pin.OUT)                                  # D4를 초록 LED 출력모드 설정
-    PinD5.init(Pin.OUT)                                  # D5를 노랑 LED 출력모드 설정
+    led_red.init(Pin.OUT)                                # D2를 빨간 LED 출력모드 설정
+    led_blue.init(Pin.OUT)                               # D3를 파란 LED 출력모드 설정
+    led_green.inti(Pin.OUT)                              # D4를 초록 LED 출력모드 설정
+    led_yellow.init(Pin.OUT)                             # D5를 노랑 LED 출력모드 설정
 
 
 # main loop
@@ -50,31 +50,31 @@ def loop():
     Tc = T - 273.15
     
     if Tc <= 10:                                         # 온도가 10도 이하면 파랑 LED 켜기
-        PinD2.value(LOW)
-        PinD3.value(HIGH)
-        PinD4.value(LOW) 
-        PinD5.value(LOW) 
+        led_red.value(LOW)
+        led_blue.value(HIGH)
+        led_green.value(LOW)
+        led_yellow.value(LOW)
         print("파랑온")
 
-    if Tc >= 10 && Tc < 20:                                          # 온도가 10도 이상 20도 미만이면 초록 LED 켜기
-        PinD2.value(LOW)
-        PinD3.value(LOW)
-        PinD4.value(HIGH) 
-        PinD5.value(LOW) 
+    if Tc >= 10 && Tc < 20:                              # 온도가 10도 이상 20도 미만이면 초록 LED 켜기
+        led_red.value(LOW)
+        led_blue.value(LOW)
+        led_green.value(HIGH)
+        led_yellow.value(LOW)
         print("초록온")
 
-    if Tc >= 20 && Tc < 30:                                          # 온도가 20도이상 30도 미만이면 노랑 LED 켜기
-        PinD2.value(LOW)
-        PinD3.value(LOW)
-        PinD4.value(LOW) 
-        PinD5.value(HIGH) 
+    if Tc >= 20 && Tc < 30:                              # 온도가 20도이상 30도 미만이면 노랑 LED 켜기
+        led_red.value(LOW)
+        led_blue.value(LOW)
+        led_green.value(LOW)
+        led_yellow.value(HIGH)
         print("노랑온")
 
     if Tc >= 30:                                         # 온도가 30도 이상이면 빨강 LED 켜기
-        PinD2.value(HIGH)
-        PinD3.value(LOW)
-        PinD4.value(LOW) 
-        PinD5.value(LOW) 
+        led_red.value(HIGH)
+        led_blue.value(LOW)
+        led_green.value(LOW)
+        led_yellow.value(LOW)
         print("빨강온")
 
     time.sleep(0.2)                                      # 0.2초 기다리기
