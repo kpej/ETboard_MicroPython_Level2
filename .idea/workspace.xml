@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31dcac9b-17fe-4d81-aab3-8307dee51d19" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/05_temperature/03._temperature_sensor_temp_led/03._temperature_sensor_temp_led.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/05_temperature/03._temperature_sensor_temp_led/03._temperature_sensor_temp_led.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/22_ultrasonic/02._ultrasonic_sensor_led_control/02._ultrasonic_sensor_led.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/22_ultrasonic/02._ultrasonic_sensor_led_control/02._ultrasonic_sensor_led.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/25_touch/02._touch_sensor_led/02._touch_sensor_led.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/25_touch/02._touch_sensor_led/02._touch_sensor_led.py" afterDir="false" />
-    </list>
+    <list default="true" id="31dcac9b-17fe-4d81-aab3-8307dee51d19" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
