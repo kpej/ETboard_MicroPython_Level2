@@ -6,18 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="31dcac9b-17fe-4d81-aab3-8307dee51d19" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/02_button/03._button_all_status/03._button_all_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/02_button/03._button_all_status/03._button_all_status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/02_button/04._button_led_control/04._led_button_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/02_button/04._button_led_control/04._led_button_control.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/04_photoresistor/03._photoresistor_sensor_led_fade/03._photoresistor_sensor_led_fade.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/04_photoresistor/03._photoresistor_sensor_led_fade/03._photoresistor_sensor_led_fade.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/05_temperature/01._temperature_sensor/01._temperature_sensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/05_temperature/01._temperature_sensor/01._temperature_sensor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/05_temperature/02._temperature_sensor_result/02._temperature_sensor_result.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/05_temperature/02._temperature_sensor_result/02._temperature_sensor_result.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/05_temperature/03._temperature_sensor_temp_led/03._temperature_sensor_temp_led.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/05_temperature/03._temperature_sensor_temp_led/03._temperature_sensor_temp_led.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/10_WiFi/01._WiFi_IPAddress_print/01._WiFi_IPAddress_print.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/10_WiFi/01._WiFi_IPAddress_print/01._WiFi_IPAddress_print.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/10_WiFi/02._WiFi_simple_web_server/02._WiFi_simple_web_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/10_WiFi/02._WiFi_simple_web_server/02._WiFi_simple_web_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/10_WiFi/03._WiFi_web_server_variable_resistance/03._WiFi_web_server_variable_resistance.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/10_WiFi/03._WiFi_web_server_variable_resistance/03._WiFi_web_server_variable_resistance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/10_WiFi/04._WiFi_led_control/04._WiFi_led_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/10_WiFi/04._WiFi_led_control/04._WiFi_led_control.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/21_servo_motor/03._servo_motor_up_down/03._servo_motor_up_down.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/21_servo_motor/03._servo_motor_up_down/03._servo_motor_up_down.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/21_servo_motor/04._servo_motor_control/04._servo_motor_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/21_servo_motor/04._servo_motor_control/04._servo_motor_control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/22_ultrasonic/02._ultrasonic_sensor_led_control/02._ultrasonic_sensor_led.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/22_ultrasonic/02._ultrasonic_sensor_led_control/02._ultrasonic_sensor_led.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/25_touch/02._touch_sensor_led/02._touch_sensor_led.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/25_touch/02._touch_sensor_led/02._touch_sensor_led.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

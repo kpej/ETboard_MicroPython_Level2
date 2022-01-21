@@ -35,7 +35,7 @@ def setup():
 
     led_red.init(Pin.OUT)                                # 빨간 LED 출력모드 설정
     led_blue.init(Pin.OUT)                               # 파란 LED 출력모드 설정
-    led_green.inti(Pin.OUT)                              # 초록 LED 출력모드 설정
+    led_green.init(Pin.OUT)                              # 초록 LED 출력모드 설정
     led_yellow.init(Pin.OUT)                             # 노랑 LED 출력모드 설정
 
 
@@ -56,15 +56,15 @@ def loop():
         led_yellow.value(LOW)
         print("파랑온")
 
-    if Tc >= 10 && Tc < 20:                              # 온도가 10도 이상 20도 미만이면 초록 LED 켜기
+    if Tc >= 10 and Tc < 20:                              # 온도가 10도 이상 20도 미만이면 초록 LED 켜기
         led_red.value(LOW)
         led_blue.value(LOW)
         led_green.value(HIGH)
         led_yellow.value(LOW)
         print("초록온")
 
-    if Tc >= 20 && Tc < 30:                              # 온도가 20도이상 30도 미만이면 노랑 LED 켜기
-        led_red.value(LOW)
+    if Tc >= 20 and Tc < 30:                              # 온도가 20도이상 30도 미만이면 노랑 LED 켜기
+        led_red.value(LOW)s
         led_blue.value(LOW)
         led_green.value(LOW)
         led_yellow.value(HIGH)
