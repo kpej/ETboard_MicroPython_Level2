@@ -17,20 +17,19 @@ from ETboard.lib.pin_define import *
 
 # global variable
 sensor = ADC(Pin(A1))                             # 조도센서 핀 지정
-PinD2 = Pin(D2)                                   # 빨강 LED 핀 지정
+led_red = Pin(D2)                                 # 빨강 LED 핀 지정
 
 # setup
 def setup():
-    sensor.atten(ADC.ATTN_11DB)                   # 조도 센서 입력모드 설정
-    PinD2.init(Pin.OUT)                           # 빨강 LED 출력모드 설정
-
+    sensor.atten(ADC.ATTN_11DB)                   # 조도센서 입력모드 설정
+    led_red.init(Pin.OUT)                         # 빨강 LED 출력모드 설정
 
 # main loop
 def loop():
-    sensor_result = 1023 - sensor.read() / 3      # 조도 센서 값 저장
+    sensor_result = 1023 - sensor.read() / 3      # 조도센서 값 저장
     print(sensor_result)                          # 조도센서 값 출력
     
-    pwm2 = PWM(Pin(D2), 500, int(sensor_result))
+    pwm2 = PWM(led_red, 500, int(sensor_result))
 
     time.sleep(0.1)                               # 0.1초 기다리기 
 

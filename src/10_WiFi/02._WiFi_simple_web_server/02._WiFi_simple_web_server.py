@@ -4,7 +4,7 @@
 # Author       : 위대원
 # Created Date : 2021.08.24
 # Reference    :
-# modified     :
+# Modified     :
 # ******************************************************************************************
 
 
@@ -19,7 +19,7 @@ from ETboard.lib.pin_define import *
 ssid = "ssid"                                   # 와이파이 아이디
 password = "password"                           # 와이파이 비밀번호
 server = WiFi.WebServer(80)
-led = Pin(D2)                                   # 빨간 LED 의 핀 번호 지정
+led = Pin(D2)                                   # 빨강 LED 의 핀 번호 지정
 
 
 # user function

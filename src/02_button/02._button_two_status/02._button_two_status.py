@@ -15,20 +15,20 @@ from ETboard.lib.pin_define import *
 
 
 # global variable
-PinD6 = Pin(D6)                        # 빨강 버튼 핀 지정
-PinD7 = Pin(D7)                        # 파랑 버튼 핀 지정
+button_red = Pin(D6)                   # 빨강 버튼 핀 지정
+button_blue = Pin(D7)                  # 파랑 버튼 핀 지정
 
 
 # setup
 def setup():
-    PinD6.init(Pin.IN)                 # 빨강 버튼 입력모드 설정하기
-    PinD7.init(Pin.IN)                 # 파랑 버튼 입력모드 설정하기
+    button_red.init(Pin.IN)            # 빨강 버튼 입력모드 설정하기
+    button_blue.init(Pin.IN)           # 파랑 버튼 입력모드 설정하기
 
 
 # main loop
 def loop():
-    button_red_status = PinD6.value()
-    button_blue_status = PinD7.value()
+    button_red_status = button_red.value()
+    button_blue_status = button_blue.value()
     
     if button_red_status == 0:         # 빨강 버튼이 눌렸는지 체크
         print("빨강 버튼이 눌림")

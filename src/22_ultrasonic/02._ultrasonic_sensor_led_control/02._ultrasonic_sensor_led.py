@@ -10,7 +10,7 @@
 
 
 # import
-import tim
+import time
 from machine import Pin, time_pulse_us
 from ETboard.lib.pin_define import *
 
@@ -19,9 +19,9 @@ from ETboard.lib.pin_define import *
 trigPin = Pin(D9)                                   # 초음파 송신부
 echoPin = Pin(D8)                                   # 초음파 수신부
 
-Pin2 = Pin(D2)
-Pin4 = Pin(D4)
-Pin5 = Pin(D5)
+led_red = Pin(D2)                                   # 빨강 LED 핀 지정
+led_green = Pin(D4)                                 # 초록 LED 핀 지정
+led_yellow = Pin(D5)                                # 노랑 LED 핀 지정
 
 
 # setup
@@ -29,9 +29,9 @@ def setup():
     trigPin.init(Pin.OUT)                           # 초음파 송신부 출력 모드 설정하기
     echoPin.init(Pin.IN)                            # 초음파 수신부 입력 모드 설정하기
 
-    PinD2.init(Pin.OUT)                             # 빨강 LED 출력 모드 설정하기
-    PinD4.init(Pin.OUT)                             # 초록 LED 출력 모드 설정하기
-    PinD5.init(Pin.OUT)                             # 노랑 LED 출력 모드 설정하기
+    led_red.init(Pin.OUT)                             # 빨강 LED 출력 모드 설정하기
+    led_green.init(Pin.OUT)                             # 초록 LED 출력 모드 설정하기
+    led_yellow.init(Pin.OUT)                             # 노랑 LED 출력 모드 설정하기
 
 
 # main loop
@@ -53,19 +53,19 @@ def loop():
     
     # 초음파센서 값에 따라 LED 제어
     if distance < 10:                               # 거리가 10cm 미만이면
-        PinD2.value(HIGH)                           # 빨강색 LED 켜짐
+        led_red.value(HIGH)                           # 빨강색 LED 켜짐
     else:
-        PinD2.value(LOW)                            # 빨강색 LED 꺼짐
+        led_red.value(LOW)                            # 빨강색 LED 꺼짐
 
-    if (distance < 20) and (distance > 10):         # 10cm 초과 그리고 20cm 미만
-        PinD5.value(HIGH)                           # 노랑색 LED 켜짐
+    if (distance < 20) and (distance >= 10):         # 10cm 초과 그리고 20cm 이하
+        led_yellow.value(HIGH)                           # 노랑색 LED 켜짐
     else:
-        PinD5.value(LOW)                            # 노랑색 LED 꺼짐
+        led_yellow.value(LOW)                            # 노랑색 LED 꺼짐
         
-    if distance > 20:                               # 20cm 이상이면
-        PinD4.value(HIGH)                           # 초록색 LED 켜짐
+    if distance > 20:                               # 20cm 초과 이면
+        led_green.value(HIGH)                           # 초록색 LED 켜짐
     else:
-        PinD4.value(LOW)                            # 초록색 LED 꺼짐
+        led_green.value(LOW)                            # 초록색 LED 꺼짐
 
 
 if __name__ == "__main__":
