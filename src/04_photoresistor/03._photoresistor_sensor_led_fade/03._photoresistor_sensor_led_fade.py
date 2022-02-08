@@ -1,11 +1,11 @@
 # ******************************************************************************************
 # FileName     : 03._photoresistor_sensor_led_fade
-# Description  : 조도센서 값에 따라 빨강 LED의 밝기가 달라짐
-#                조도센서 값 쉘에 출력
+# Description  : 조도 센서 값에 따라서 밝기 조절 해보기
+#                시리얼 모니터 출력
 # Author       : 이승찬
 # Created Date : 2021.08.13
 # Reference    :
-# Modified     :
+# Modified     : 2022.02.08 : SJI : 헤더 수정, 소스 크린징
 # ******************************************************************************************
 
 
@@ -26,7 +26,7 @@ def setup():
 
 # main loop
 def loop():
-    sensor_result = 1023 - sensor.read() / 3      # 조도센서 값 저장
+    sensor_result = 1023 - sensor.read() / 4      # 조도센서 값 저장
     print(sensor_result)                          # 조도센서 값 출력
     
     pwm2 = PWM(led_red, 500, int(sensor_result))

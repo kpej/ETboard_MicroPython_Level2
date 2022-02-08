@@ -1,10 +1,10 @@
 # ******************************************************************************************
 # FileName     : 02._WiFi_simple_web_server
-# Description  : 간단한 문자열을 보여주는 서버의 예제
+# Description  : 간단한 문자열을 보여주는 서버 만들어 보기 
 # Author       : 위대원
 # Created Date : 2021.08.24
 # Reference    :
-# Modified     :
+# Modified     : 2022.02.08 : SJI : 헤더 수정, 주석 수정, 소스 크린징
 # ******************************************************************************************
 
 
@@ -16,16 +16,16 @@ from ETboard.lib.pin_define import *
 
 
 # global variable
-ssid = "ssid"                                   # 와이파이 아이디
-password = "password"                           # 와이파이 비밀번호
+ssid = "ssid"                                   # 와이파이 아이디 입력
+password = "password"                           # 와이파이 비밀번호 입력
 server = WiFi.WebServer(80)
 led = Pin(D2)                                   # 빨강 LED 의 핀 번호 지정
 
 
 # user function
 def handle_root():
-    led.value(HIGH)                             # LED 를 키기
-    server.send(200, "text/plain", "hello from ET-board! __ {}".format(time.time()))
+    led.value(HIGH)                             # LED 를 켜기
+    server.send(200, "text/plain", "hello from ET-board!".format(time.time()))
     led.value(LOW)                              # LED 를 끄기
 
 

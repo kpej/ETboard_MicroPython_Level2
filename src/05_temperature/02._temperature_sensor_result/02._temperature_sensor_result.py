@@ -1,10 +1,10 @@
 # ******************************************************************************************
 # FileName     : 02._temperature_sensor_result
-# Description  : 온도센서 값을 이용해 온도 출력 해보기
+# Description  : 온도 센서 값을 이용해 현재 온도 출력 해보기
 # Author       : 이승찬
 # Created Date : 2021.08.17
 # Reference    :
-# Modified     :
+# Modified     : 2022.02.08 : SJI : 헤더 수정, 소스 크린징
 # ******************************************************************************************
 
 
@@ -38,10 +38,10 @@ def loop():
     logR2 = math.log(R2)
     T = (1.0 / (c1 + c2*logR2 + c3*logR2*logR2*logR2))
     Tc = T - 273.15
-    
-    print(Tc)                                  # 온도 변환 값 출력
-    
-    time.sleep(0.1)                            # 0.1초 기다리기
+                                   
+    print(f'{Tc:0.2f}', "°C")                  # 온도 변환 값 출력
+ 
+    time.sleep(0.2)                            # 0.2초 기다리기
 
 
 if __name__ == "__main__":
