@@ -1,10 +1,10 @@
 # ******************************************************************************************
 # FileName     : 02._led_two_blink
-# Description  : LED 두개를 켰다 껐다 해보기
+# Description  : 빨간 노랑 LED 를 켜고 끄는 예제
 # Author       : 이승찬
 # Created Date : 2021.08.13
 # Reference    :
-# Modified     : 2022.02.07 : SJI : 헤더 수정
+# Modified     :
 # ******************************************************************************************
 
 
@@ -27,13 +27,13 @@ def setup():
 
 # main loop
 def loop():
-    led_red.value(HIGH)       # 빨강 LED 켜기
-    led_yellow.value(HIGH)    # 노랑 LED 켜기
-    time.sleep(2)             # 2초 기다리기
+    led_red.value(HIGH)      # 빨강 LED 켜기
+    led_yellow.value(HIGH)   # 노랑 LED 켜기
+    time.sleep(2)            # 2초 기다리기
     
-    led_red.value(LOW)        # 빨강 LED 끄기
-    led_yellow.value(LOW)     # 노랑 LED 끄기
-    time.sleep(2)             # 2초 기다리기
+    led_red.value(LOW)       # 빨강 LED 끄기
+    led_yellow.value(LOW)    # 노랑 LED 끄기
+    time.sleep(2)            # 2초 기다리기
 
 
 if __name__ == "__main__":

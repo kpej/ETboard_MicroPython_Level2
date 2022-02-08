@@ -1,11 +1,10 @@
 # ******************************************************************************************
 # FileName     : 01._servo_motor
-# Description  : 서보모터를 지정된 각도만큼 회전 해보기
-#                0도 ~ 180도
+# Description  : 서보모터를 사용하는 기본적인 예제
 # Author       : 이승찬
 # Created Date : 2021.08.20
 # Reference    :
-# Modified     : 2022.02.08 : SJI : 헤더 수정, 주석 수정
+# Modified     :
 # ******************************************************************************************
 
 
@@ -29,14 +28,14 @@ def setup():
 def loop():
     pos = 0
     for x in range(180):                        # 서보모터 시계방향으로 180도 회전
-        servo.write_angle(pos)                  #서버모터 각도 설정
+        servo.write_angle(pos)
         pos += 1
-        time.sleep(0.01)                        #0.01초 대기
+        time.sleep(0.01)
         
     for x in range(180):                        # 서보모터 반시계방향으로 0도 회전
-        servo.write_angle(pos)                  #서버모터 각도 설정
+        servo.write_angle(pos)
         pos -= 1
-        time.sleep(0.01)                        #0.01초 대기
+        time.sleep(0.01)
 
 
 if __name__ == "__main__":

@@ -1,10 +1,10 @@
 # ******************************************************************************************
 # FileName     : 01._WiFi_IPAddress_print
-# Description  : WiFi에 연결하여 받은 IP주소를 출력 해보기
+# Description  : WiFi에 연결하고 받은 IP주소를 출력하는 예제
 # Author       : 위대원
 # Created Date : 2021.08.24
 # Reference    :
-# Modified     : 2022 : SJI : 헤더 수정, 주석 수정
+# Modified     :
 # ******************************************************************************************
 
 
@@ -14,8 +14,8 @@ import ETboard.lib.WiFi as WiFi
 
 
 # global variable
-ssid = "ssid"                                   # 와이파이 아이디 입력
-password = "password"                           # 와이파이 비밀번호 입력
+ssid = "ssid"                                   # 와이파이 아이디
+password = "password"                           # 와이파이 비밀번호
 
 
 # setup

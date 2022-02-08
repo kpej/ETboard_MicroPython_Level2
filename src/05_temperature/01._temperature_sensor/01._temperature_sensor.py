@@ -1,10 +1,10 @@
 # ******************************************************************************************
 # FileName     : 01._temperature_sensor
-# Description  : 온도 센서 값 출력 해보기
+# Description  : 온도센서 값 쉘에 출력
 # Author       : 이승찬
 # Created Date : 2021.08.17
 # Reference    :
-# Modified     : 2022.02.08 : SJI : 헤더 수정, 소스 크린징
+# Modified     :
 # ******************************************************************************************
 
 
@@ -28,7 +28,7 @@ def loop():
     sensor_result = sensor.read()      # 온도센서 값 저장
     print(sensor_result)               # 온도센서 값 출력
     
-    time.sleep(0.2)                    # 0.2초 기다리기
+    time.sleep(0.1)                    # 0.1초 기다리기
 
 
 if __name__ == "__main__":

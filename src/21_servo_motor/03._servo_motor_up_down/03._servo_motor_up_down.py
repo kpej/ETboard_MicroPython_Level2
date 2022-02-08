@@ -1,10 +1,11 @@
 # ******************************************************************************************
 # FileName     : 03._servo_motor_up_down
-# Description  : 빨강, 노랑 버튼을 눌러 서보모터 움직여 보기
+# Description  : up 버튼을 누르면 서보모터를 180도까지 회전하고 (빨강버튼)
+#                down 버튼을 누르면 0도까지 회전함            (노랑버튼)
 # Author       : 이승찬
 # Created Date : 2021.08.20
 # Reference    :
-# Modified     : 2022.02.08 : SJI : 헤더 수정, 주석 수정, 소스 크린징 
+# Modified     :
 # ******************************************************************************************
 
 
@@ -32,11 +33,11 @@ def loop():
     Up_state = Up.value()                      # 빨강 버튼값 가져오기
     Down_state = Down.value()                  # 노랑 버튼값 가져오기
     
-    if Up_state == LOW:                        # 뻘강 버튼이 눌리면 서보모터 180도 까지 회전
+    if Up_state == 0:                          # 뻘강 버튼이 눌리면 서보모터 위로 작동
         servo.write_angle(180)
         time.sleep(0.3)
                 
-    if Down_state == LOW:                      # 노랑 버튼이 눌리면 서보모터 0도 까지 회전
+    if Down_state == 0:                        # 노랑 버튼이 눌리면 서보모터 아래로 작동
         servo.write_angle(0)
         time.sleep(0.3)
 

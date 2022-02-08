@@ -1,10 +1,10 @@
 # ******************************************************************************************
 # FileName     : 04._WiFi_led_control
-# Description  : html 페이지에서 버튼을 눌러 LED를 켜고 꺼 보기
+# Description  : html 페이지에서 버튼을 누르면 LED 를 켜고 끌 수 있는 예제
 # Author       : 위대원
 # Created Date : 2021.08.24
 # Reference    :
-# Modified     : 2022.02.08 : SJI : 헤더 수정, 주석 수정
+# Modified     :
 # ******************************************************************************************
 
 
@@ -16,8 +16,8 @@ from ETboard.lib.pin_define import *
 
 
 # global variable
-ssid = "ssid"                                  # 와이파이 아이디 입력
-password = "password"                          # 와이파이 비밀번호 입력
+ssid = "ssid"                                  # 와이파이 아이디
+password = "password"                          # 와이파이 비밀번호
 server = WiFi.WebServer(80)                    # 서버에서 사용할 포트 설정
 led = Pin(D2)                                  # 빨강 LED 의 핀 번호 지정
 html_page = "<font size=16>Click <a href=\"/red_led_on\"> red On </a> to turn On LED<br></font>"\

@@ -1,12 +1,10 @@
 # ******************************************************************************************
 # FileName     : 02._variable_resistance_sensor_led
-# Description  : 가변저항 값에 따라 LED 순차적으로 켜보기
-#                빨강-파랑-노랑-초록
+# Description  : 가변저항 값에 따라 LED 가 순차적으로 켜짐(빨강-파랑-노랑-초록)
 # Author       : 이인정
 # Created Date : 2021.05.31
 # Reference    :
 # Modified     : 2021.06.01 : LIJ : 헤더수정
-# Modified     : 2021.06.01 : SJI : 헤더수정, 주석 수정
 # ******************************************************************************************
 
 
@@ -44,16 +42,16 @@ def loop():
     led_green.value(LOW)
     button_yellow.value(LOW)
     
-    if sensor_result > 500:              # 가변저항 값이 500 초과 빨강 LED 켜기
+    if sensor_result > 500:              # 가변저항 값이 500 초과이면 빨강 LED 켜기
         led_red.value(HIGH)
         
-    if sensor_result > 1000:             # 가변저항 값이 1000 초과 파랑 LED 켜기
+    if sensor_result > 1000:             # 가변저항 값이 1000 초과이면 파랑 LED 켜기
         led_blue.value(HIGH)
         
-    if sensor_result > 1500:             # 가변저항 값이 1500 초과 노랑 LED 켜기
+    if sensor_result > 1500:             # 가변저항 값이 1500 초과이면 노랑 LED 켜기
         button_yellow.value(HIGH)
         
-    if sensor_result > 2000:             # 가변저항 값이 2000 초과 초록 LED 켜기
+    if sensor_result > 2000:             # 가변저항 값이 2000 초과이면 초록 LED 켜기
         led_green.value(HIGH)
 
 

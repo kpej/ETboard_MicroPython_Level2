@@ -1,10 +1,10 @@
 # ******************************************************************************************
 # FileName     : 01._led_one_blink
-# Description  : LED 한 개를 켰다 껐다 해보기
+# Description  : 빨강 LED 가 켜졌다 꺼졌다 반복
 # Author       : 이승찬
 # Created Date : 2021.08.19
 # Reference    :
-# Modified     : 2022.02.07 : SJI : 헤더 수정, 소스 크린징
+# Modified     :
 # ******************************************************************************************
 
 
@@ -26,10 +26,16 @@ def setup():
 # main loop
 def loop():
     led_red.value(HIGH)     # 빨강 LED 켜기
-    time.sleep(2)           # 2초 기다리기
+    time.sleep(1)           # 1초 기다리기
 
     led_red.value(LOW)      # 빨강 LED 끄기
-    time.sleep(2)           # 2초 기다리기
+    time.sleep(1)           # 1초 기다리기
+
+    led_red.value(HIGH)     # 빨강 LED 켜기
+    time.sleep(1)           # 1초 기다리기
+
+    led_red.value(LOW)      # 빨강 LED 끄기
+    time.sleep(1)           # 1초 기다리기
 
 
 if __name__ == "__main__":

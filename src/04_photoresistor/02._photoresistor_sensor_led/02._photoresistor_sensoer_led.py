@@ -1,10 +1,11 @@
 # ******************************************************************************************
 # FileName     : 02._photoresistor_sensoer_led
-# Description  : 조도 센서의 값에 따라 LED를 켜보보기
+# Description  : 조도센서 값에 따라 순차적으로 LED 가 켜짐
+#                빨강 - 파랑 - 초록 - 노랑 순서
 # Author       : 이승찬
 # Created Date : 2021.08.13
 # Reference    :
-# Modified     : 2022.02.08 : SJI : 헤더 수정, 주석 수정
+# Modified     :
 # ******************************************************************************************
 
 
@@ -40,16 +41,16 @@ def loop():
     led_green.value(LOW)
     led_yellow.value(LOW)
     
-    if sensor_result < 2000:          # 조도센서 값이 2000 미만 이라면 빨강 LED 켜기
+    if sensor_result < 2000:          # 조도센서 값이 2000이하이면 빨강 LED 킴
         led_red.value(HIGH)
         
-    if sensor_result < 1500:          # 조도센서 값이 1500 미만 이라면 파랑 LED 켜기
+    if sensor_result < 1500:          # 조도센서 값이 1500이하이면 파랑 LED 킴
         led_blue.value(HIGH)
         
-    if sensor_result < 1000:          # 조도센서 값이 1000 미만 이라면 초록 LED 켜기
+    if sensor_result < 1000:          # 조도센서 값이 1000이하이면 초록 LED 킴
         led_green.value(HIGH)
         
-    if sensor_result < 500:           # 조도센서 값이 500 미만 이라면 노랑 LED 켜기
+    if sensor_result < 500:           # 조도센서 값이 500이하이면 노랑 LED 킴
         led_yellow.value(HIGH)
 
 
