@@ -1,10 +1,10 @@
 # ******************************************************************************************
 # FileName     : 01._touch_sensor
-# Description  : 터치센서의 상태를 쉘에 출력
+# Description  : 터치 센서의 값 출력 해보기
 # Author       : 이승찬
 # Created Date : 2021.08.18
 # Reference    :
-# Modified     :
+# Modified     : 2022.02.08 : SJI : 헤더 수정, 소스 크린징
 # ******************************************************************************************
 
 
@@ -15,7 +15,7 @@ from ETboard.lib.pin_define import *
 
 
 # global variable
-pt = Pin(D2)               # 터치센서 핀 지정
+pt = Pin(D6)               # 터치센서 핀 지정
 
 
 # setup

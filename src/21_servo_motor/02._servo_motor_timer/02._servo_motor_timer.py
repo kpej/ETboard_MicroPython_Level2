@@ -1,10 +1,11 @@
 # ******************************************************************************************
 # FileName     : 02._servo_motor_timer
-# Description  : 서보모터가 일정 시간 마다 up, down 하는 예제
+# Description  : 서보모터 회전 해보기
+#                0도, 180도
 # Author       : 이승찬
 # Created Date : 2021.08.20
 # Reference    :
-# Modified     :
+# Modified     : 2022.02.08 : SJI : 헤더 수정, 주석 수정
 # ******************************************************************************************
 
 
@@ -26,11 +27,11 @@ def setup():
 
 # mainloop
 def loop():
-    servo.write_angle(180)                     # 서보모터 180 작동
-    time.sleep(2)                              # 2초 기다리기
+    servo.write_angle(180)                     # 서보모터 180도까지 회전
+    time.sleep(2)                              # 2초 대기
     
-    servo.write_angle(0)                       # 서보모터 0 작동
-    time.sleep(2)                              # 2초 기다리기
+    servo.write_angle(0)                       # 서보모터 0도까지 회전
+    time.sleep(2)                              # 2초 대기
 
 
 if __name__ == "__main__":

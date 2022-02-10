@@ -1,10 +1,10 @@
 # ******************************************************************************************
 # FileName     : 01._buzzer
-# Description  : 부저를 이용하여 소리를 내는 예제
+# Description  : 부저를 이용하여 소리 내보기
 # Author       : 이승찬
 # Created Date : 2021.08.18
 # Reference    :
-# Modified     :
+# Modified     : 2022.02.08 : SJI : 헤더 수정, 주석 수정, 소스 크린징
 # ******************************************************************************************
 
 
@@ -15,8 +15,8 @@ from ETboard.lib.pin_define import *
 
 
 # global variable
-buzzer = Pin(D2)                    # 부저 핀 지정
-
+buzzer = Pin(D6)                    # 부저 핀 지정
+count = 0
 
 # setup
 def setup():
@@ -24,12 +24,15 @@ def setup():
 
 
 # main loop
-def loop():
-    # 부저 소리내기
-    buzzer.value(HIGH)
-    time.sleep(0.001)        
-    buzzer.value(LOW)
-    time.sleep(0.001)         
+def loop():                         # 소리를 짧게 한번 냄
+    global count
+    while count < 1 :               # 부저 소리내기
+        for i in range(80) :
+            buzzer.value(HIGH)
+            time.sleep(0.001)
+            buzzer.value(LOW)
+            time.sleep(0.001)
+        count = 1   
 
 
 if __name__ == "__main__":

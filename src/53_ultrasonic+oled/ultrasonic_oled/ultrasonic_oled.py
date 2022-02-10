@@ -1,10 +1,10 @@
 # ******************************************************************************************
 # FileName     : ultrasonic_oled
-# Description  : 초음파센서로 거리를 측정하고 거리에 따라 OLED에 문자열 출력하는 예제
+# Description  : 초음파 센서와 거리를 측정하여 OLED에 출력 해보기
 # Author       : 이승찬
 # Created Date : 2021.08.18
 # Reference    :
-# Modified     :
+# Modified     : 2022.02.08 : SJI : 헤더 수정, 주석 수정 
 # ******************************************************************************************
 
 
@@ -36,21 +36,19 @@ def loop():
     time.sleep_ms(10)
     trigPin.value(LOW)
     
-    # echoPin 이 HIGH를 유지한 시간 저장
-    duration = time_pulse_us(echoPin, HIGH)
-    # HIGH 였을 때 시간(초음파 송수신 시간)을 기준으로 거리를 계산
-    distance = ((17 * duration) / 1000)
+    duration = time_pulse_us(echoPin, HIGH)        # echoPin 이 HIGH를 유지한 시간 저장
+    distance = ((17 * duration) / 1000)            # HIGH 였을 때 시간(초음파 송수신 시간)을 기준으로 거리를 계산
     
     # 초음파센서 값에 따라 OLED 제어
-    if distance > 0:                               # 거리가 10cm 미만이면
+    if distance > 0:                               # 물체와의 거리가 20cm 미만이면 "danger !" 출력
         oled.clear()
         oled.setLine(2, "danger !")       
 
-    if distance > 20:                              # 10cm 초과이면 20cm 미만이면
+    if distance > 20:                              # 물체와의 거리가 20cm 초과 30cm 이하이면 "warning !" 출력
         oled.clear()
         oled.setLine(2, "warning !")       
         
-    if distance > 30:                              # 20cm 이상이면
+    if distance > 30:                              # 물체와의 거리가 30cm 초과이면 " safe ! " 출력
         oled.clear()
         oled.setLine(2, "safe !")
         

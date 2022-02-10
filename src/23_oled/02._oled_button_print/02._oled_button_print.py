@@ -1,10 +1,10 @@
 # ******************************************************************************************
 # FileName     : 02._oled_button_print
-# Description  : 버튼을 누르면 oled 모듈에 누른 버튼 색상 출력
+# Description  : OLED 모듈에 누른 버튼 색상을 출력 해보기
 # Author       : 이승찬
 # Created Date : 2021.08.18
 # Reference    :
-# Modified     :
+# Modified     : 2022.02.08 : SJI : 헤더 수정, 주석 수정, 소스 크린징
 # ******************************************************************************************
 
 
@@ -38,25 +38,25 @@ def loop():
     button_yellow = PinD9.value()
     
     oled.clear()
-    oled.setLine(2, "PushButton!")    # 처음 OLED 화면 초기화
+    oled.setLine(2, "PushButton!")    # PushButton! 출력
     
-    if button_red == 0:               # 버튼이 눌렸는지 체크 버튼이 눌리면 0 눌리지 않으면 1
+    if button_red == LOW:             # 빨강 버튼 누르면 red 출력
         oled.clear()
-        oled.setLine(2, "red")        # 2번째 줄에 red 출력하기
+        oled.setLine(2, "red")        
         
-    if button_blue == 0:
+    if button_blue == LOW:            # 파랑 버튼 누르면 blue 출력
         oled.clear()
-        oled.setLine(2, "blue")       # 2번째 줄에 blue 출력하기
+        oled.setLine(2, "blue")       
         
-    if button_green == 0:
+    if button_green == LOW:           # 초록 버튼 누르면 green 출력
         oled.clear()
-        oled.setLine(2, "green")      # 2번째 줄에 green 출력하기
+        oled.setLine(2, "green")      
         
-    if button_yellow == 0:
+    if button_yellow == LOW:          # 노랑 버튼 누르면 yellow 출력
         oled.clear()
-        oled.setLine(2, "yellow")     # 2번째 줄에 yellow 출력하기
+        oled.setLine(2, "yellow")     
     
-    oled.display()                    # 저장된 내용을 oled에 보여줌
+    oled.display()                    # OLED에 표시
 
 
 if __name__ == "__main__":
