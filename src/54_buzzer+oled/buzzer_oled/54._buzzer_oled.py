@@ -6,6 +6,7 @@
 # Reference    :
 # Modified     : 2022.02.15 : SJI : 주석 수정
 # Modified     : 2022.08.30 : SCS : pitches.py를 현재 폴더에서 import 함
+# Modified     : 2022.08.30 : SCS : 메로디를 oled에 표시함
 # ******************************************************************************************
 
 # import
@@ -30,9 +31,13 @@ melody_num = 0
 for melody in melody_notes:
     time_length = noteDurations[ melody_num ] / 100
     
-    print(f'{melody_num:3}, {melody:5}, {time_length:6.2}')
+    note = f'{melody_num:3}, {melody:4}, {time_length:4.2}'
+    print(note)
     melody_num = melody_num + 1
+    
+    oled.clear()                                           # oled 지우기
     oled.setLine(2, "Mario")                               # 2번째 줄에 Mario 출력하기
+    oled.setLine(3, note)                                  # 3번째 줄에 음정보 출력하
     oled.display()                                         # 저장된 내용을 oled 에 보여줌
     
     buzzer.freq(melody)                                    # 부저의 피치(음 높낮이)
