@@ -5,6 +5,7 @@
 # Created Date : 2022.02.04
 # Reference    :
 # Modified     : 2022.02.15 : SJI : 주석 수정
+# Modified     : 2022.08.30 : SCS : pitches.py를 현재 폴더에서 import 함
 # ******************************************************************************************
 
 # import
@@ -12,8 +13,8 @@ import machine
 import time
 from machine import Pin
 from ETboard.lib.pin_define import *
-from ETboard.lib.pitches import *
 from ETboard.lib.OLED_U8G2 import *
+from pitches import *
 
 # global variable
 buzzer_pin = machine.Pin(D6, machine.Pin.OUT)
