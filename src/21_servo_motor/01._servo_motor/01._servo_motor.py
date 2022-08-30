@@ -31,12 +31,12 @@ def loop():
     for x in range(180):                        # 서보모터 시계방향으로 180도 회전
         servo.write_angle(pos)                  #서버모터 각도 설정
         pos += 1
-        time.sleep(0.01)                        #0.01초 대기
-        
+        time.sleep(0.01)                        # 0.01초 대기
+
     for x in range(180):                        # 서보모터 반시계방향으로 0도 회전
         servo.write_angle(pos)                  #서버모터 각도 설정
         pos -= 1
-        time.sleep(0.01)                        #0.01초 대기
+        time.sleep(0.01)                        # 0.01초 대기
 
 
 if __name__ == "__main__":
