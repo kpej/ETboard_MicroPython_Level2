@@ -17,7 +17,7 @@ from ETboard.lib.servo import Servo
 
 
 # global variable
-servo = Servo(Pin(D2))                          # 서보모터 핀 지정
+servo = Servo(Pin(D6))                          # 서보모터 핀 지정
 
 
 # setup
