@@ -28,6 +28,7 @@ def loop():
     sensor.measure()                  # 온습도 센서 값 측정
     print(sensor.temperature(),       # 온도 값 출력
           sensor.humidity())          # 습도 값 출력
+    oled.clear()
     oled.setLine(1, 'DHT11 sensor')   # OLED 모듈 1번 줄에 저장
     oled.setLine(2, 'temp: ' + str(sensor.temperature()) + 'c')    # OLED 모듈 2번 줄에 저장
     oled.setLine(3, 'humi: ' + str(sensor.humidity()) + '%')       # OLED 모듈 3번 줄에 저장
