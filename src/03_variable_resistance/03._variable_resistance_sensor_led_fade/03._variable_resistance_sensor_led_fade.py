@@ -18,12 +18,14 @@ from ETboard.lib.pin_define import *
 # global variable
 sensor = ADC(Pin(A0))                       # 가변저항 핀 지정
 led_red = Pin(D2)                           # 빨강 LED 핀 지정
+pwm2 = PWM(led_red)                         # PWM 생성
 
 
 # setup
 def setup():
     sensor.atten(ADC.ATTN_11DB)             # 가변저항 입력 모드 설정
     led_red.init(Pin.OUT)                   # 빨강 LED 출력 모드 설정
+    pwm2.deinit()                           # 기존 PWM 재설정
 
 
 # main loop
