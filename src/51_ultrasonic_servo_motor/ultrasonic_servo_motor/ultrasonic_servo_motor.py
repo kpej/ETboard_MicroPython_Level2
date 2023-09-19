@@ -4,7 +4,8 @@
 # Author       : 이승찬
 # Created Date : 2021.08.20
 # Reference    :
-# Modified     : 2022.02.08 : SJI : 헤더 수정, 주석 수정 
+# Modified     : 2022.02.08 : SJI : 헤더 수정, 주석 수정
+# Modified     : 2023.09.19 : PEJ : 서보모터 핀 수정
 # ******************************************************************************************
 
 
@@ -16,7 +17,7 @@ from ETboard.lib.servo import Servo
 
 
 # global variable
-servo = Servo(Pin(D2))                           # 서보모터 핀 지정
+servo = Servo(Pin(D6))                           # 서보모터 핀 지정
 trigPin = Pin(D9)                                # 초음파 송신부 핀 지정
 echoPin = Pin(D8)                                # 초음파 수신부 핀 지정
 
