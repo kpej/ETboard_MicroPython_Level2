@@ -5,10 +5,12 @@
 # Created Date : 2021.08.18
 # Reference    :
 # Modified     : 2022.02.08 : SJI : 헤더 수정, 주석 수정, 소스 크린징
+# Modified     : 2023.09.11 : KTW : 코드 수정, 주석 수정
 # ******************************************************************************************
 
 
 # import
+import time
 from machine import Pin, ADC
 from ETboard.lib.OLED_U8G2 import *
 
@@ -20,7 +22,7 @@ sensor = ADC(Pin(A1))                      # 조도센서 핀 지정
 
 # setup
 def setup():
-    sensor.atten(ADC.ATTN_11DB)            # 조도센서
+    sensor.atten(ADC.ATTN_11DB)            # 조도센서 입력 모드 설정 
 
 
 # main loop
@@ -36,6 +38,10 @@ def loop():
         oled.setLine(2, "Night !")         # Night ! 출력하기
 
     oled.display()                         # OLED에 표시
+
+    print(CDS_Value)                       # 조도 센서 값 출력
+
+    time.sleep(0.2)                        # 0.2초 기다리기
 
 
 if __name__ == "__main__":

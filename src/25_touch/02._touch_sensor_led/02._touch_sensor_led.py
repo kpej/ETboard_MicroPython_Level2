@@ -4,7 +4,8 @@
 # Author       : 이승찬
 # Created Date : 2021.08.18
 # Reference    :
-# Modified     : 2022.02.08 : SJI : 헤더 수정, 주석 수정, 소스 크린징 
+# Modified     : 2022.02.08 : SJI : 헤더 수정, 주석 수정, 소스 크린징
+# Modified     : 2023.09.11 : KTW : 주석 수정, 코드 들여쓰기 수정
 # ******************************************************************************************
 
 
@@ -39,13 +40,13 @@ def loop():
     led_blue.value(LOW)        # 파랑 LED 끄기
     led_green.value(LOW)       # 초록 LED 끄기
     led_yellow.value(LOW)      # 노랑 LED 끄기
-    
-    if pt.value() == HIGH:     # 터치시 모든 ELD켜기
+
+    if pt.value() == HIGH:     # 터치 시 모든 LED 켜기
         led_red.value(HIGH)    # 빨강 LED 켜기
         led_blue.value(HIGH)   # 파랑 LED 켜기
         led_green.value(HIGH)  # 초록 LED 켜기
         led_yellow.value(HIGH) # 노랑 LED 켜기
-        
+
     time.sleep(0.1)            # 0.1초 대기
 
 
@@ -53,6 +54,7 @@ if __name__ == "__main__":
     setup()
     while True:
         loop()
+
 
 # ==========================================================================================
 #
