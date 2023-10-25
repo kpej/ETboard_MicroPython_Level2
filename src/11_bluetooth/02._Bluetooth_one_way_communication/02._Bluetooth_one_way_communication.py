@@ -1,6 +1,6 @@
 # ******************************************************************************************
 # FileName     : 02._Bluetooth_one_way_communication
-# Description  : 
+# Description  : PC에서 이티보드로 메시지 보내기
 # Author       : 손철수
 # Created Date : 2023.10.24
 # Reference    :
