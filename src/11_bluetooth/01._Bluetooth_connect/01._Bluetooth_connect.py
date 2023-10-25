@@ -34,7 +34,7 @@ def loop():
     pass
 
 
-# entry point
+# start point
 if __name__ == "__main__":
     setup()
     while True:
