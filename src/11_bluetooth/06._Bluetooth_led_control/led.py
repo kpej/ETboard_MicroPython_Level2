@@ -4,7 +4,7 @@ from ETboard.lib.pin_define import *
 
 import sys
 import time
-from ETboard_BluetoothSerial import BluetoothSerial
+from ETboard.lib.BluetoothSerial import BluetoothSerial
 
 # global variable
 led_red = Pin(D2)           # 빨강 LED 핀 지정
