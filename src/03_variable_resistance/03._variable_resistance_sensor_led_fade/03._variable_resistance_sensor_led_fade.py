@@ -6,6 +6,7 @@
 # Created Date : 2021.08.13
 # Reference    :
 # Modified     : 2022 : SJI : 헤더 수정, 주석 수정
+# Modified     : 2023.10.25 : PEJ : PWM 함수 사용 방법 수정
 # ******************************************************************************************
 
 
@@ -34,7 +35,7 @@ def loop():
     print(sensor_result)
 
     # 가변저항값을 이용하여 빨강 LED의 밝기를 조절
-    pwm2 = PWM(led_red, 500, int(sensor_result))
+    pwm2 = PWM(led_red, 500, duty = int(sensor_result))
     time.sleep(0.1)                         # 0.1초 기다리기
 
 
@@ -42,6 +43,7 @@ if __name__ == "__main__":
     setup()
     while True:
         loop()
+
 
 # ==========================================================================================
 #
