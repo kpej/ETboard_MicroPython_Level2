@@ -1,10 +1,10 @@
 # ******************************************************************************************
-# FileName     : 04._Bluetooth_variable_resistance
+# FileName     : 05._Bluetooth_photoresistor_resistance
 # Description  : 
-# Author       : 손철수
+# Author       : 박은정
 # Created Date : 2023.10.25
 # Reference    :
-# Modified     : 2023.10.25 : PEJ : 헤더 Description 추가, 주석 추가
+# Modified     :
 # ******************************************************************************************
 
 
@@ -17,13 +17,13 @@ from ETboard.lib.BluetoothSerial import BluetoothSerial
 
 
 # global variable
-sensor = ADC(Pin(A0))                                      # 가변저항 핀 지정
+sensor = ADC(Pin(A1))                                      # 조도 센서 핀 지정
 SerialBT = BluetoothSerial()
 
 
 # setup
 def setup():
-    sensor.atten(ADC.ATTN_11DB)                            # 가변저항 입력 모드 설정
+    sensor.atten(ADC.ATTN_11DB)                            # 조도 센서 입력 모드 설정
 
     print('블루투스 이름 : ' + SerialBT._ble_name)         # 블루투스 이름 출력
 
@@ -36,9 +36,9 @@ def setup():
 
 # main loop
 def loop():    
-    sensor_result = sensor.read()                           # 가변저항 센서 값 저장
-    print(sensor_result)                                    # 가변저항 센서 값 출력
-    SerialBT.send(str(sensor_result)+'\n')                  # 가변저항 센서 값 전송
+    sensor_result = sensor.read()                          # 조도 센서 센서 값 저장
+    print(sensor_result)                                   # 조도 센서 센서 값 출력
+    SerialBT.send(str(sensor_result)+'\n')                 # 조도 센서 센서 값 전송
     time.sleep_ms(1000)
 
 
