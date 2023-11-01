@@ -52,7 +52,6 @@ class BLESimplePeripheral:
         # Track connections so we can send notifications.
         if event == _IRQ_CENTRAL_CONNECT:
             conn_handle, _, _ = data
-            print("New connection", conn_handle)
             self._connections.add(conn_handle)
         elif event == _IRQ_CENTRAL_DISCONNECT:
             conn_handle, _, _ = data
@@ -64,6 +63,7 @@ class BLESimplePeripheral:
             conn_handle, value_handle = data
             value = self._ble.gatts_read(value_handle)
             if value_handle == self._handle_rx and self._write_callback:
+                # decode_value = value.decode('utf-8').rstrip()
                 self._write_callback(value)
 
     def send(self, data):
@@ -74,7 +74,6 @@ class BLESimplePeripheral:
         return len(self._connections) > 0
 
     def _advertise(self, interval_us=500000):
-        print("Starting advertising")
         self._ble.gap_advertise(interval_us, adv_data=self._payload)
 
     def on_write(self, callback):
